@@ -1,10 +1,14 @@
 public class Rectangle extends Shape {
-    int firstside=8;
-    int secondside=6;
+    int firstSide;
+    int secondSide;
 
+    public Rectangle(int firstside, int secondside) {
+        this.firstSide = firstside;
+        this.secondSide = secondside;
+    }
 
     @Override
     public int doingArea() {
-        return firstside*secondside;
+        return firstSide*secondSide;
     }
 }

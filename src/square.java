@@ -1,9 +1,12 @@
 public class square extends Shape {
-    int firstside=8;
+    int firstSide;
 
+    public square(int firstSide) {
+        this.firstSide = firstSide;
+    }
 
     @Override
     public int doingArea() {
-        return firstside*firstside;
+        return firstSide*firstSide;
     }
 }
